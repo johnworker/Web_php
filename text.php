@@ -8,11 +8,14 @@
 </head>
 <body>
     <h1>Title</h1>
+    <!-- 中間有 ' 的時候需在 ' 前加上\ -->
     <?php echo "I\'m Leo";?>
 
+    <!-- 也可以用print去印出結果，但print只能內含一個變數 -->
     <?php print "hello world";?>
 
     <?php echo "<h2 style='color:red;'>I'm Leo</h2>";?>
+
     <?php
     $car = "Honda";
     $yeah = "!";
@@ -20,11 +23,19 @@
     echo 'I have a ' . $car . $yeah . '<br>';
     ?>
 
+
+    <?php
+    $car = "Honda";
+    $yeah = "!";
+    // echo "I have a $car"
+    echo "I have a  . $car . $yeah " '<br>';
+    ?>
+
     <?php
     $x = "5" ;
     $y = 2 ;
     // echo $x + $y; 運算
-    // 連續字串
+    // echo $x . $y; 連續字串
     echo $x . $y;
     ?>
 
@@ -53,15 +64,18 @@
     echo str_replace("world", "Misa", "Hello world") ."<br>";; // Hello Misa
     ?>
 
+    <!-- 3次方 -->
     <?php
     echo 2**3 ."<br>";
     ?>
 
+    <!-- %是除 -->
     <?php
     $x = 10;
     echo $x %= 2;
     ?>
 
+    <!-- 條件語法（if...else...elseif） -->
     <?php
     $money = 100;
     if ($money > 50) {
