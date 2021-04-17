@@ -8,6 +8,10 @@
 </head>
 <body>
     <h1>Title</h1>
+    <?php echo "I\'m Leo";?>
+
+    <?php print "hello world";?>
+
     <?php echo "<h2 style='color:red;'>I'm Leo</h2>";?>
     <?php
     $car = "Honda";
@@ -24,22 +28,27 @@
     echo $x . $y;
     ?>
 
+    <!-- 字串中加上「\n」代表程式碼換行。 -->
     <?php
     echo "<h2>\nsubtitle\n</h2>\n"
     ?>
 
+    <!-- strlen()字元數 -->
     <?php
     echo strlen("Hello world") . "<br>";
     ?>
 
+    <!-- str_word_count()字母數 -->
     <?php
     echo str_word_count("Hello world") . "<br>"; 
     ?>
 
+    <!-- strpos()尋找字元 -->
     <?php
     echo strpos("Hello world!", "H") . "<br>";//0
     ?>
 
+    <!-- str_replace()取代字元 -->
     <?php
     echo str_replace("world", "Misa", "Hello world") ."<br>";; // Hello Misa
     ?>
