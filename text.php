@@ -46,23 +46,30 @@
 
     <!-- strlen()字元數 -->
     <?php
-    echo strlen("Hello world") . "<br>";
+    echo strlen("Hello world") . "<br>";//空白也算是字元，所以共11個字元，中文是一個字算3個字元
     ?>
 
     <!-- str_word_count()字母數 -->
     <?php
-    echo str_word_count("Hello world") . "<br>"; 
+    echo str_word_count("Hello world") . "<br>"; //算出單字數量
     ?>
 
     <!-- strpos()尋找字元 -->
     <?php
-    echo strpos("Hello world!", "H") . "<br>";//0
+    echo strpos("Hello world!", "H") . "<br>";//在php裡的第一個是0
     ?>
 
     <!-- str_replace()取代字元 -->
     <?php
     echo str_replace("world", "Misa", "Hello world") ."<br>";; // Hello Misa
     ?>
+
+    <!-- str_replace()取代字元 使用變數 -->
+    <?php
+    $x = "misa";
+    echo str_replace("world", $x, "Hello world") ."<br>";; // Hello Misa
+    ?>
+
 
     <!-- 3次方 -->
     <?php
@@ -93,6 +100,7 @@
       }
     ?>
 
+    <!-- 比較 -->
     <?php
     $money = "50";
     echo $money <=> 50;
